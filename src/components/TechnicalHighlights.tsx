@@ -1,0 +1,90 @@
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Terminal, Code, Image, Activity } from "lucide-react";
+
+export const TechnicalHighlights = () => {
+  const highlights = [
+    {
+      icon: Terminal,
+      title: "Model Parameter Mastery",
+      description: "Deep understanding of Temperature and Top P parameter effects on model behavior",
+      technologies: ["Temperature Control", "Top P Sampling", "Response Length"],
+      color: "blue"
+    },
+    {
+      icon: Code,
+      title: "Multi-Model Comparison",
+      description: "Comparative analysis between Amazon Titan and Meta Llama foundation models",
+      technologies: ["Titan Text G1", "Llama 3 8B", "Metrics Analysis"],
+      color: "purple"
+    },
+    {
+      icon: Image,
+      title: "AI Image Generation",
+      description: "Advanced image creation, variation, and modification using AI models",
+      technologies: ["Titan Image Gen", "Object Removal", "Variations"],
+      color: "green"
+    },
+    {
+      icon: Activity,
+      title: "Playground Proficiency",
+      description: "Expert-level usage of text, chat, and image playground environments",
+      technologies: ["Text Playground", "Chat Mode", "Compare Mode"],
+      color: "indigo"
+    }
+  ];
+
+  const getColorClasses = (color: string) => {
+    const colors = {
+      blue: "text-blue-600 border-blue-200 bg-blue-50",
+      purple: "text-purple-600 border-purple-200 bg-purple-50",
+      green: "text-green-600 border-green-200 bg-green-50",
+      indigo: "text-indigo-600 border-indigo-200 bg-indigo-50"
+    };
+    return colors[color as keyof typeof colors];
+  };
+
+  return (
+    <section className="py-20 px-6 bg-white/50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-6">Technical Achievements</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Key technical competencies developed through hands-on Amazon Bedrock experience
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {highlights.map((highlight, index) => {
+            const IconComponent = highlight.icon;
+            return (
+              <Card key={index} className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300">
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                    <div className={`p-3 rounded-lg ${getColorClasses(highlight.color)}`}>
+                      <IconComponent className="h-8 w-8" />
+                    </div>
+                    <CardTitle className="text-xl">{highlight.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {highlight.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {highlight.technologies.map((tech, techIndex) => (
+                      <Badge key={techIndex} variant="outline" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
