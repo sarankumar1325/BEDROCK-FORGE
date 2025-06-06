@@ -11,7 +11,7 @@ export const TechnicalHighlights = () => {
       description: "Deep understanding of Temperature and Top P parameter effects on model behavior",
       technologies: ["Temperature Control", "Top P Sampling", "Response Length"],
       color: "blue",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+      image: "/lovable-uploads/0ff4e7e8-269b-4f75-8d88-4828e19c9fbd.png"
     },
     {
       icon: Code,
@@ -19,7 +19,7 @@ export const TechnicalHighlights = () => {
       description: "Comparative analysis between Amazon Titan and Meta Llama foundation models",
       technologies: ["Titan Text G1", "Llama 3 8B", "Metrics Analysis"],
       color: "purple",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+      image: "/lovable-uploads/a752a7a5-3697-438e-860a-01ddb59ce9fb.png"
     },
     {
       icon: Image,
@@ -27,7 +27,7 @@ export const TechnicalHighlights = () => {
       description: "Advanced image creation, variation, and modification using AI models",
       technologies: ["Titan Image Gen", "Object Removal", "Variations"],
       color: "green",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+      image: "/lovable-uploads/84d081b4-8920-4aae-9b86-3c582b71ddc4.png"
     },
     {
       icon: Activity,
@@ -35,7 +35,7 @@ export const TechnicalHighlights = () => {
       description: "Expert-level usage of text, chat, and image playground environments",
       technologies: ["Text Playground", "Chat Mode", "Compare Mode"],
       color: "indigo",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475"
+      image: "/lovable-uploads/d7cd7f7a-d2f5-4ef0-991f-f6eda4d626e6.png"
     }
   ];
 

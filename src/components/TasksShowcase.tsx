@@ -7,11 +7,11 @@ import { Terminal, Image, Code, Briefcase } from "lucide-react";
 export const TasksShowcase = () => {
   return (
     <section className="py-20 px-6 relative">
-      {/* Subtle background image */}
+      {/* Subtle background image using your upload */}
       <div className="absolute inset-0 opacity-5">
         <img 
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
-          alt="Technology background"
+          src="/lovable-uploads/0ff4e7e8-269b-4f75-8d88-4828e19c9fbd.png" 
+          alt="AWS Bedrock Console Background"
           className="w-full h-full object-cover"
         />
       </div>
@@ -48,8 +48,8 @@ export const TasksShowcase = () => {
             <Card className="bg-white/90 backdrop-blur-sm overflow-hidden">
               <div className="relative h-32 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
-                  alt="AWS Console"
+                  src="/lovable-uploads/0ff4e7e8-269b-4f75-8d88-4828e19c9fbd.png" 
+                  alt="AWS Bedrock Model Catalog"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-purple-600/80" />

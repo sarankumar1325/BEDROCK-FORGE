@@ -8,11 +8,11 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/5 to-indigo-600/10" />
       
-      {/* Background image */}
+      {/* Background image - using your uploaded screenshot */}
       <div className="absolute inset-0 opacity-5">
         <img 
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
-          alt="Circuit board background"
+          src="/lovable-uploads/0ff4e7e8-269b-4f75-8d88-4828e19c9fbd.png" 
+          alt="AWS Bedrock Console Background"
           className="w-full h-full object-cover"
         />
       </div>

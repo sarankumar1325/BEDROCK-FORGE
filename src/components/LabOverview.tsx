@@ -6,11 +6,11 @@ import { Briefcase, Code } from "lucide-react";
 export const LabOverview = () => {
   return (
     <section className="py-20 px-6 relative">
-      {/* Background image for coding context */}
+      {/* Background using your uploaded image */}
       <div className="absolute inset-0 opacity-3">
         <img 
-          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
-          alt="Java programming monitor"
+          src="/lovable-uploads/a752a7a5-3697-438e-860a-01ddb59ce9fb.png" 
+          alt="AWS Bedrock Console Background"
           className="w-full h-full object-cover"
         />
       </div>
