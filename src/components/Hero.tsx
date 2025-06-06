@@ -8,6 +8,15 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/5 to-indigo-600/10" />
       
+      {/* Background image */}
+      <div className="absolute inset-0 opacity-5">
+        <img 
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
+          alt="Circuit board background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <Badge variant="outline" className="mb-6 px-4 py-2 text-sm font-medium bg-white/80 backdrop-blur-sm">
           AWS Hands-On Lab Completion

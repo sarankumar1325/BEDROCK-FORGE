@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -6,8 +5,17 @@ import { Terminal, Image, Code, Briefcase } from "lucide-react";
 
 export const TasksShowcase = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 relative">
+      {/* Subtle background image */}
+      <div className="absolute inset-0 opacity-5">
+        <img 
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
+          alt="Technology background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">Task Implementation</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -36,14 +44,20 @@ export const TasksShowcase = () => {
           </TabsList>
           
           <TabsContent value="task1">
-            <Card className="bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-3">
-                  <Briefcase className="h-8 w-8 text-blue-600" />
-                  Model Access & Exploration
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
+            <Card className="bg-white/90 backdrop-blur-sm overflow-hidden">
+              <div className="relative h-32 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
+                  alt="AWS Console"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-purple-600/80" />
+                <CardHeader className="absolute inset-0 flex flex-row items-center text-white">
+                  <Briefcase className="h-8 w-8 mr-3" />
+                  <CardTitle className="text-2xl">Model Access & Exploration</CardTitle>
+                </CardHeader>
+              </div>
+              <CardContent className="space-y-6 pt-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold text-lg mb-3">Task 1.1: Model Catalog Exploration</h4>
@@ -73,14 +87,20 @@ export const TasksShowcase = () => {
           </TabsContent>
           
           <TabsContent value="task2">
-            <Card className="bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-3">
-                  <Terminal className="h-8 w-8 text-purple-600" />
-                  Text Playground Experimentation
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
+            <Card className="bg-white/90 backdrop-blur-sm overflow-hidden">
+              <div className="relative h-32 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+                  alt="Programming Interface"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/80 to-indigo-600/80" />
+                <CardHeader className="absolute inset-0 flex flex-row items-center text-white">
+                  <Terminal className="h-8 w-8 mr-3" />
+                  <CardTitle className="text-2xl">Text Playground Experimentation</CardTitle>
+                </CardHeader>
+              </div>
+              <CardContent className="space-y-6 pt-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold text-lg mb-3">Model Configuration</h4>
@@ -115,14 +135,20 @@ export const TasksShowcase = () => {
           </TabsContent>
           
           <TabsContent value="task3">
-            <Card className="bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-3">
-                  <Code className="h-8 w-8 text-indigo-600" />
-                  Chat Playground & Model Comparison
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
+            <Card className="bg-white/90 backdrop-blur-sm overflow-hidden">
+              <div className="relative h-32 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                  alt="MacBook Pro Development"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/80 to-blue-600/80" />
+                <CardHeader className="absolute inset-0 flex flex-row items-center text-white">
+                  <Code className="h-8 w-8 mr-3" />
+                  <CardTitle className="text-2xl">Chat Playground & Model Comparison</CardTitle>
+                </CardHeader>
+              </div>
+              <CardContent className="space-y-6 pt-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold text-lg mb-3">Conversational AI Testing</h4>
@@ -161,14 +187,20 @@ export const TasksShowcase = () => {
           </TabsContent>
           
           <TabsContent value="task4">
-            <Card className="bg-white/80 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-3">
-                  <Image className="h-8 w-8 text-green-600" />
-                  AI Image Generation Mastery
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
+            <Card className="bg-white/90 backdrop-blur-sm overflow-hidden">
+              <div className="relative h-32 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                  alt="AI Technology"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-teal-600/80" />
+                <CardHeader className="absolute inset-0 flex flex-row items-center text-white">
+                  <Image className="h-8 w-8 mr-3" />
+                  <CardTitle className="text-2xl">AI Image Generation Mastery</CardTitle>
+                </CardHeader>
+              </div>
+              <CardContent className="space-y-6 pt-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div>
                     <h4 className="font-semibold text-lg mb-3">Image Creation</h4>

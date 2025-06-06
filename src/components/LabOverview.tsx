@@ -5,8 +5,17 @@ import { Briefcase, Code } from "lucide-react";
 
 export const LabOverview = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 relative">
+      {/* Background image for coding context */}
+      <div className="absolute inset-0 opacity-3">
+        <img 
+          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+          alt="Java programming monitor"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">Lab Overview</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -15,7 +24,7 @@ export const LabOverview = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <Card className="bg-white/80 backdrop-blur-sm border-blue-200">
+          <Card className="bg-white/90 backdrop-blur-sm border-blue-200">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <Briefcase className="h-8 w-8 text-blue-600" />
@@ -39,7 +48,7 @@ export const LabOverview = () => {
             </CardContent>
           </Card>
           
-          <Card className="bg-white/80 backdrop-blur-sm border-purple-200">
+          <Card className="bg-white/90 backdrop-blur-sm border-purple-200">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <Code className="h-8 w-8 text-purple-600" />

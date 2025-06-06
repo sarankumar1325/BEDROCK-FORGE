@@ -10,28 +10,32 @@ export const TechnicalHighlights = () => {
       title: "Model Parameter Mastery",
       description: "Deep understanding of Temperature and Top P parameter effects on model behavior",
       technologies: ["Temperature Control", "Top P Sampling", "Response Length"],
-      color: "blue"
+      color: "blue",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
     },
     {
       icon: Code,
       title: "Multi-Model Comparison",
       description: "Comparative analysis between Amazon Titan and Meta Llama foundation models",
       technologies: ["Titan Text G1", "Llama 3 8B", "Metrics Analysis"],
-      color: "purple"
+      color: "purple",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
     },
     {
       icon: Image,
       title: "AI Image Generation",
       description: "Advanced image creation, variation, and modification using AI models",
       technologies: ["Titan Image Gen", "Object Removal", "Variations"],
-      color: "green"
+      color: "green",
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
     },
     {
       icon: Activity,
       title: "Playground Proficiency",
       description: "Expert-level usage of text, chat, and image playground environments",
       technologies: ["Text Playground", "Chat Mode", "Compare Mode"],
-      color: "indigo"
+      color: "indigo",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475"
     }
   ];
 
@@ -46,7 +50,7 @@ export const TechnicalHighlights = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-white/50">
+    <section className="py-20 px-6 bg-white/50 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">Technical Achievements</h2>
@@ -59,14 +63,20 @@ export const TechnicalHighlights = () => {
           {highlights.map((highlight, index) => {
             const IconComponent = highlight.icon;
             return (
-              <Card key={index} className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300">
-                <CardHeader>
-                  <div className="flex items-center gap-4">
-                    <div className={`p-3 rounded-lg ${getColorClasses(highlight.color)}`}>
-                      <IconComponent className="h-8 w-8" />
-                    </div>
-                    <CardTitle className="text-xl">{highlight.title}</CardTitle>
+              <Card key={index} className="bg-white border-gray-200 hover:shadow-lg transition-all duration-300 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={highlight.image} 
+                    alt={highlight.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className={`absolute top-4 left-4 p-3 rounded-lg ${getColorClasses(highlight.color)}`}>
+                    <IconComponent className="h-8 w-8" />
                   </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">{highlight.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
