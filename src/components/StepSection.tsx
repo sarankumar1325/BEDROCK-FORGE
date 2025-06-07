@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Clock, AlertCircle } from "lucide-react";
@@ -34,18 +33,6 @@ export const StepSection = ({ stepNumber, title, description }: StepSectionProps
                 If you don't have an AWS account yet, you'll need to create one. AWS Bedrock requires 
                 proper authentication and may have regional availability restrictions.
               </p>
-              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                <div className="flex items-start gap-2">
-                  <AlertCircle className="h-4 w-4 text-yellow-600 mt-0.5" />
-                  <div>
-                    <p className="text-sm font-medium text-yellow-800">Important Note</p>
-                    <p className="text-sm text-yellow-700">
-                      Some AI models may incur costs. This tutorial uses minimal resources, 
-                      but always check AWS pricing before proceeding.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div className="space-y-4">
@@ -59,7 +46,7 @@ export const StepSection = ({ stepNumber, title, description }: StepSectionProps
             </div>
           </div>
         );
-      
+
       case "2":
         return (
           <div className="space-y-6">
