@@ -13,7 +13,7 @@ export const DocumentationHeader = () => {
             Complete Tutorial Guide
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            AWS Bedrock Documentation
+            AWS Bedrock AI Foundation Models
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A comprehensive step-by-step guide to mastering Amazon Bedrock's AI capabilities. 
