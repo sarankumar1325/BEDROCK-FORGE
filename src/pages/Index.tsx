@@ -56,6 +56,14 @@ const Index = () => {
               title="AI Image Generation"
               description="Create stunning images with artificial intelligence"
             />
+            
+            <Separator className="my-8" />
+            
+            <StepSection 
+              stepNumber="6" 
+              title="Prompt Engineering Mastery"
+              description="Master different prompting techniques for better AI responses"
+            />
           </div>
         </div>
       </div>

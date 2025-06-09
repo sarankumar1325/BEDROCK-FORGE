@@ -34,6 +34,12 @@ export const TableOfContents = () => {
       title: "Image Generation", 
       completed: true,
       subsections: ["5.1 Text to Image", "5.2 Image Variations", "5.3 Object Removal"]
+    },
+    { 
+      number: "6", 
+      title: "Prompt Engineering", 
+      completed: true,
+      subsections: ["6.1 Zero Shot", "6.2 One Shot", "6.3 Few Shot", "6.4 Chain of Thought", "6.5 Context Learning", "6.6 Prompt Interrogation"]
     }
   ];
 
