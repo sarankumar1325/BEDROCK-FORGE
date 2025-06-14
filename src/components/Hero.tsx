@@ -32,7 +32,10 @@ export const Hero = () => {
           className="
             text-5xl md:text-7xl font-bold mb-8 
             animate-gradient-blur bg-gradient-to-r from-white via-blue-400 to-purple-400
-            bg-[length:200%_200%] bg-clip-text text-transparent relative overflow-visible whitespace-pre-line
+            bg-[length:200%_200%] bg-clip-text text-transparent relative
+            overflow-visible whitespace-pre-line
+            leading-tight md:leading-[1.125] lg:leading-[1.09] 
+            pb-3 md:pb-4
           "
           style={{ WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
         >
