@@ -13,26 +13,27 @@ const Index = () => {
     <SidebarProvider defaultOpen={true}>
       <div className="min-h-screen flex w-full bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
         <AppSidebar />
-        
-        <SidebarInset className="flex-1">
+        <SidebarInset className="flex-1 flex flex-col min-h-screen">
           {/* Hero Section */}
           <Hero />
-          
+
           {/* Project Highlights */}
           <ProjectHighlights />
-          
+
           {/* Documentation Header with Sidebar Toggle */}
           <div className="border-t border-white/10 bg-black/10 backdrop-blur-lg">
-            <div className="max-w-7xl mx-auto px-6 py-16">
-              <div className="flex items-center gap-4 mb-8">
-                <SidebarTrigger className="bg-white/10 backdrop-blur-lg border-white/20 text-white hover:bg-white/20 border rounded-sm p-2">
-                  <Menu className="h-4 w-4" />
-                </SidebarTrigger>
+            <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-12 md:py-16">
+              <div className="flex flex-col md:flex-row items-center gap-4 mb-8">
+                <div className="md:order-1 w-full md:w-auto">
+                  <SidebarTrigger className="bg-white/10 backdrop-blur-lg border-white/20 text-white hover:bg-white/20 border rounded-sm p-2 md:hidden block">
+                    <Menu className="h-4 w-4" />
+                  </SidebarTrigger>
+                </div>
                 <div className="text-center flex-1">
-                  <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                  <h1 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
                     BedrockForge Documentation
                   </h1>
-                  <p className="text-xl text-blue-100/80 max-w-4xl mx-auto leading-relaxed">
+                  <p className="text-lg md:text-xl text-blue-100/80 max-w-4xl mx-auto leading-relaxed">
                     Master the complete ecosystem of generative AI through Amazon Bedrock's cutting-edge foundation models. 
                     Build production-ready AI applications with hands-on tutorials and real-world examples.
                   </p>
@@ -42,7 +43,7 @@ const Index = () => {
           </div>
           
           {/* Main Documentation Content */}
-          <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-6 md:py-8">
             <div className="space-y-12">
               <StepSection 
                 stepNumber="1" 

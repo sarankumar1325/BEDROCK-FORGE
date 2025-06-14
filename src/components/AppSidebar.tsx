@@ -10,11 +10,15 @@ import {
   SidebarMenuItem,
   SidebarHeader,
   SidebarFooter,
+  SidebarTrigger,
+  useSidebar,
 } from "@/components/ui/sidebar";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Circle, Brain, Code } from "lucide-react";
+import { CheckCircle, Circle, Code, Menu } from "lucide-react";
+import React from "react";
 
 export const AppSidebar = () => {
+  const { state } = useSidebar();
   const sections = [
     { 
       number: "1", 
@@ -60,10 +64,11 @@ export const AppSidebar = () => {
     }
   ];
 
+  // Add a clear, prominent toggle on top.
   return (
     <Sidebar variant="sidebar" collapsible="icon">
-      <SidebarHeader className="p-4">
-        <div className="flex items-center gap-3">
+      <SidebarHeader className="p-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
           <div className="p-2 bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-lg rounded-xl border border-white/20 group-data-[collapsible=icon]:hidden">
             <Code className="h-5 w-5 text-blue-300" />
           </div>
@@ -74,8 +79,11 @@ export const AppSidebar = () => {
             <p className="text-xs text-blue-100/60">Documentation</p>
           </div>
         </div>
+        {/* Always visible toggle */}
+        <SidebarTrigger className="ml-auto p-2 rounded bg-white/10 text-white hover:bg-white/20 border border-white/20 md:ml-0">
+          <Menu className="h-5 w-5" />
+        </SidebarTrigger>
       </SidebarHeader>
-      
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="text-white">Table of Contents</SidebarGroupLabel>
@@ -115,14 +123,8 @@ export const AppSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      
-      <SidebarFooter className="p-4 group-data-[collapsible=icon]:hidden">
-        <div className="text-center">
-          <p className="text-xs text-blue-100/40">
-            Created by Sarankumar
-          </p>
-        </div>
-      </SidebarFooter>
+      {/* Remove SidebarFooter as per minimal requirements */}
     </Sidebar>
   );
 };
+
