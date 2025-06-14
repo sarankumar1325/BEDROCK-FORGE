@@ -6,7 +6,6 @@ import { Hero } from "@/components/Hero";
 import { ProjectHighlights } from "@/components/ProjectHighlights";
 import { Footer } from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 
 const Index = () => {
@@ -26,10 +25,8 @@ const Index = () => {
           <div className="border-t border-white/10 bg-black/10 backdrop-blur-lg">
             <div className="max-w-7xl mx-auto px-6 py-16">
               <div className="flex items-center gap-4 mb-8">
-                <SidebarTrigger asChild>
-                  <Button variant="outline" size="sm" className="bg-white/10 backdrop-blur-lg border-white/20 text-white hover:bg-white/20">
-                    <Menu className="h-4 w-4" />
-                  </Button>
+                <SidebarTrigger className="bg-white/10 backdrop-blur-lg border-white/20 text-white hover:bg-white/20 border rounded-sm p-2">
+                  <Menu className="h-4 w-4" />
                 </SidebarTrigger>
                 <div className="text-center flex-1">
                   <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
