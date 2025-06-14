@@ -27,8 +27,15 @@ export const Hero = () => {
           AWS Bedrock Foundation Models Guide
         </Badge>
 
-        {/* Main heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent animate-fade-in delay-200">
+        {/* Main heading with animated gradient and full visibility */}
+        <h1
+          className="
+            text-5xl md:text-7xl font-bold mb-8 
+            animate-gradient-blur bg-gradient-to-r from-white via-blue-400 to-purple-400
+            bg-[length:200%_200%] bg-clip-text text-transparent relative overflow-visible whitespace-pre-line
+          "
+          style={{ WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
+        >
           BedrockForge
         </h1>
         
