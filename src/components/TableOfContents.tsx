@@ -40,6 +40,12 @@ export const TableOfContents = () => {
       title: "Prompt Engineering", 
       completed: true,
       subsections: ["6.1 Zero Shot", "6.2 One Shot", "6.3 Few Shot", "6.4 Chain of Thought", "6.5 Context Learning", "6.6 Prompt Interrogation"]
+    },
+    { 
+      number: "7", 
+      title: "AI Safety & Guardrails", 
+      completed: true,
+      subsections: ["7.1 Custom Guardrails", "7.2 Content Filtering", "7.3 Testing & Validation", "7.4 PII Protection", "7.5 Monitoring Traces"]
     }
   ];
 

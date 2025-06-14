@@ -64,6 +64,14 @@ const Index = () => {
               title="Prompt Engineering Mastery"
               description="Master different prompting techniques for better AI responses"
             />
+            
+            <Separator className="my-8" />
+            
+            <StepSection 
+              stepNumber="7" 
+              title="AI Safety and Guardrails"
+              description="Implement responsible AI practices with content filtering and safety measures"
+            />
           </div>
         </div>
       </div>
