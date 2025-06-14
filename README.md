@@ -1,5 +1,7 @@
 # BedrockForge
 
+![Image](https://github.com/user-attachments/assets/4afc86fd-b073-468f-9669-fff907c4fc29)
+
 BedrockForge is a comprehensive and beautifully designed learning portal I built to master AWS Bedrock Foundation Models. This project helps users understand generative AI with hands-on tutorials, model playgrounds, and practical production-ready guidance for working with Amazon Bedrock. I developed this application to strengthen my AWS skills and showcase my ability to integrate AI/ML services with modern web technologies.
 
 ## 🚀 Features
