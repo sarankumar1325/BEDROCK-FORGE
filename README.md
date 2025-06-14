@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
 
-## Project info
+# BedrockForge
 
-**URL**: https://lovable.dev/projects/bbb66295-13a5-4efb-bff0-3345f0ee957c
+BedrockForge is a comprehensive and beautifully designed learning portal to master AWS Bedrock Foundation Models. This project helps users understand generative AI with hands-on tutorials, model playgrounds, and practical production-ready guidance for working with Amazon Bedrock.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Visually Rich Hero Section** with animated gradients
+- **Collapsible Sidebar** with step navigation (powered by shadcn/ui)
+- **Responsive Design** for seamless experience on all devices
+- **Step-by-Step Labs** covering text, image generation, model comparisons, safety, and more
+- **Project Highlights** showcasing practical skills
+- **Footer** with credits
+- Integration with the latest **Lucide icons**
+- Built with **TypeScript**, **React**, **Tailwind CSS**, and **shadcn/ui**
+- Easy navigation and modern glassmorphism look
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bbb66295-13a5-4efb-bff0-3345f0ee957c) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [@tanstack/react-query](https://tanstack.com/query)
+- [React Router](https://reactrouter.com/)
+- [Sonner](https://sonner.emilkowal.ski/) (toasts & notifications)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Getting Started
 
-Follow these steps:
+### 1. **Clone the repository**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone <YOUR_REPO_URL>
+cd bedrockforge
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. **Install dependencies**
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. **Start the development server**
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🌐 Live Demo
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To preview or edit this project in Lovable, just open the [project page](https://lovable.dev/projects/bbb66295-13a5-4efb-bff0-3345f0ee957c) and prompt away!
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🧩 Folder Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+.
+├── src/
+│   ├── components      # UI and layout components
+│   ├── pages           # Route-level page components
+│   ├── App.tsx         # Main entry point
+│   └── index.css       # Tailwind & custom styles
+├── public/
+├── README.md
+├── package.json
+└── ...
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/bbb66295-13a5-4efb-bff0-3345f0ee957c) and click on Share -> Publish.
+## ✅ Deployment
 
-## Can I connect a custom domain to my Lovable project?
+Publish your app easily within Lovable:
 
-Yes, you can!
+- Open your project at [lovable.dev](https://lovable.dev/)
+- Click **Publish** at the top right
+- (Optional) [Connect a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🪄 Customization
+
+- Easily modify navigation in `src/components/AppSidebar.tsx`
+- Hero and theme design in `src/components/Hero.tsx` and `src/index.css`
+- Add new sections or labs as needed in `src/pages/Index.tsx`
+
+---
+
+## 💡 Contributing
+
+PRs and suggestions are welcome! Fork this repo or use [Lovable’s remix feature](https://docs.lovable.dev/user-guides/remix).
+
+---
+
+## 📄 License
+
+This project is for educational and demo purposes.
+
+---
+
+## 🙏 Credits
+
+- Created with 💗 by Sarankumar @2025
