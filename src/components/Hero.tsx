@@ -1,109 +1,77 @@
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Terminal, Award, Code, BookOpen, Github, ExternalLink, Play } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, Sparkles, Zap, Brain } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
-      {/* Glassmorphism Background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/10 to-indigo-600/20" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/30 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500/20 rounded-full blur-2xl animate-pulse delay-500" />
+    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+      {/* Background with enhanced gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(120,119,198,0.3),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(139,92,246,0.2),transparent_50%)]" />
       </div>
       
-      {/* Background Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.2) 1px, transparent 0)`,
-          backgroundSize: '20px 20px'
-        }} />
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-0" />
+        <div className="absolute top-3/4 right-1/4 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute bottom-1/4 left-1/3 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl animate-pulse delay-2000" />
       </div>
-      
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
-        {/* Animated Badge */}
-        <div className="animate-fade-in">
-          <Badge variant="outline" className="mb-8 px-6 py-3 text-sm font-medium bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20 transition-all duration-300">
-            <BookOpen className="h-4 w-4 mr-2" />
-            AWS Bedrock Learning Lab • SPL-CX-100
-          </Badge>
-        </div>
+
+      {/* Main content */}
+      <div className="relative z-10 text-center max-w-6xl mx-auto">
+        {/* Badge */}
+        <Badge variant="outline" className="mb-8 bg-white/10 backdrop-blur-md border-white/20 text-white hover:scale-105 transition-transform duration-200 animate-fade-in">
+          <Sparkles className="h-3 w-3 mr-1" />
+          AWS Bedrock Foundation Models Guide
+        </Badge>
+
+        {/* Main heading */}
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent animate-fade-in delay-200">
+          BedrockForge
+        </h1>
         
-        {/* Main Headline */}
-        <div className="animate-fade-in delay-200">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent">
-              Master
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-blue-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent">
-              AWS Bedrock
-            </span>
-          </h1>
-        </div>
+        <p className="text-xl md:text-2xl text-blue-100/90 mb-4 animate-fade-in delay-400">
+          Master AWS Bedrock Foundation Models
+        </p>
         
-        {/* Subtitle */}
-        <div className="animate-fade-in delay-400">
-          <p className="text-xl md:text-2xl text-blue-100/90 max-w-4xl mx-auto mb-12 leading-relaxed">
-            A comprehensive, hands-on journey through Amazon Bedrock's AI foundation models. 
-            From text generation to image creation, learn production-ready AI implementation 
-            with real AWS console experience.
-          </p>
-        </div>
-        
+        <p className="text-lg text-blue-200/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in delay-600">
+          Your comprehensive guide to implementing generative AI with Amazon Bedrock. 
+          From text generation to image creation, safety guardrails to prompt engineering - 
+          build production-ready AI applications with confidence.
+        </p>
+
         {/* CTA Buttons */}
-        <div className="animate-fade-in delay-600 flex flex-wrap gap-4 justify-center mb-16">
-          <Button size="lg" className="bg-white/20 backdrop-blur-md border border-white/20 text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 px-8 py-6 text-lg">
-            <Play className="h-5 w-5 mr-2" />
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in delay-800">
+          <Button size="lg" className="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white border border-white/20 hover:scale-105 transition-all duration-300 group">
             Start Learning
+            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="outline" size="lg" className="bg-transparent backdrop-blur-md border-white/30 text-white hover:bg-white/10 hover:scale-105 transition-all duration-300 px-8 py-6 text-lg">
-            <Github className="h-5 w-5 mr-2" />
-            View Source
-          </Button>
-          <Button variant="outline" size="lg" className="bg-transparent backdrop-blur-md border-white/30 text-white hover:bg-white/10 hover:scale-105 transition-all duration-300 px-8 py-6 text-lg">
-            <ExternalLink className="h-5 w-5 mr-2" />
-            AWS Console
+          <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md hover:scale-105 transition-all duration-300">
+            View on GitHub
           </Button>
         </div>
-        
-        {/* Feature Cards */}
-        <div className="animate-fade-in delay-800 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 hover:scale-105 transition-all duration-300 group">
-            <CardContent className="p-8 text-center">
-              <Terminal className="h-12 w-12 text-blue-300 mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300" />
-              <h3 className="text-xl font-semibold mb-3 text-white">Interactive Labs</h3>
-              <p className="text-blue-100/80 mb-4">60-minute hands-on tutorials with real AWS console access</p>
-              <Badge variant="outline" className="bg-blue-500/20 border-blue-300/30 text-blue-200">
-                Lab SPL-CX-100
-              </Badge>
-            </CardContent>
-          </Card>
+
+        {/* Feature highlights */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-fade-in delay-1000">
+          <div className="glass glass-hover rounded-xl p-6 group">
+            <Brain className="h-8 w-8 text-blue-400 mb-3 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="text-lg font-semibold text-white mb-2">Foundation Models</h3>
+            <p className="text-blue-100/70 text-sm">Explore Claude, Titan, Llama and more</p>
+          </div>
           
-          <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 hover:scale-105 transition-all duration-300 group">
-            <CardContent className="p-8 text-center">
-              <Award className="h-12 w-12 text-purple-300 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="text-xl font-semibold mb-3 text-white">Beginner Friendly</h3>
-              <p className="text-blue-100/80 mb-4">No prior AI experience required - start from the basics</p>
-              <Badge variant="outline" className="bg-purple-500/20 border-purple-300/30 text-purple-200">
-                Zero Prerequisites
-              </Badge>
-            </CardContent>
-          </Card>
+          <div className="glass glass-hover rounded-xl p-6 group">
+            <Zap className="h-8 w-8 text-purple-400 mb-3 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="text-lg font-semibold text-white mb-2">Hands-on Labs</h3>
+            <p className="text-blue-100/70 text-sm">Step-by-step practical tutorials</p>
+          </div>
           
-          <Card className="bg-white/10 backdrop-blur-lg border-white/20 hover:bg-white/15 hover:scale-105 transition-all duration-300 group">
-            <CardContent className="p-8 text-center">
-              <Code className="h-12 w-12 text-indigo-300 mx-auto mb-4 group-hover:-translate-y-1 transition-transform duration-300" />
-              <h3 className="text-xl font-semibold mb-3 text-white">Production Ready</h3>
-              <p className="text-blue-100/80 mb-4">Learn real-world AI implementation patterns and best practices</p>
-              <Badge variant="outline" className="bg-indigo-500/20 border-indigo-300/30 text-indigo-200">
-                Enterprise Grade
-              </Badge>
-            </CardContent>
-          </Card>
+          <div className="glass glass-hover rounded-xl p-6 group">
+            <Sparkles className="h-8 w-8 text-green-400 mb-3 mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="text-lg font-semibold text-white mb-2">Production Ready</h3>
+            <p className="text-blue-100/70 text-sm">Safety, monitoring and best practices</p>
+          </div>
         </div>
       </div>
     </section>

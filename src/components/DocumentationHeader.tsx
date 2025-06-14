@@ -13,11 +13,11 @@ export const DocumentationHeader = () => {
             AI Foundation Models Deep Dive
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-            AWS Bedrock AI Foundation Models
+            BedrockForge Documentation
           </h1>
           <p className="text-xl text-blue-100/80 max-w-4xl mx-auto leading-relaxed">
-            Explore the complete ecosystem of generative AI through Amazon Bedrock's cutting-edge foundation models. 
-            Master real-world implementation with hands-on labs and production-ready examples.
+            Master the complete ecosystem of generative AI through Amazon Bedrock's cutting-edge foundation models. 
+            Build production-ready AI applications with hands-on labs and real-world examples.
           </p>
         </div>
         
