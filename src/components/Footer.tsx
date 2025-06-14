@@ -16,7 +16,7 @@ export const Footer = () => {
                 <Code className="h-6 w-6 text-blue-300" />
               </div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-                AWS Bedrock Guide
+                BedrockForge
               </h3>
             </div>
             <p className="text-blue-100/80 max-w-md mb-6 leading-relaxed">
@@ -72,21 +72,21 @@ export const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <Badge variant="outline" className="bg-green-500/20 border-green-400/30 text-green-300">
+            <Badge variant="outline" className="bg-purple-500/20 border-purple-400/30 text-purple-300">
               <Heart className="h-3 w-3 mr-1" />
-              Open Source
+              Made with Love
             </Badge>
             <Badge variant="outline" className="bg-blue-500/20 border-blue-400/30 text-blue-300">
-              SPL-CX-100 Lab
+              BedrockForge
             </Badge>
           </div>
 
           <div className="text-center md:text-right">
             <p className="text-blue-100/60 text-sm">
-              © 2024 AWS Bedrock Learning Guide. Built with React, TypeScript & AWS.
+              © 2025 BedrockForge. Created by Sarankumar with React, TypeScript & AWS.
             </p>
             <p className="text-blue-100/40 text-xs mt-1">
-              Educational project for learning AWS Bedrock AI capabilities
+              Personal project for learning AWS Bedrock AI capabilities
             </p>
           </div>
         </div>

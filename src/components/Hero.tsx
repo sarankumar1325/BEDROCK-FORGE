@@ -49,7 +49,7 @@ export const Hero = () => {
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md hover:scale-105 transition-all duration-300">
-            View on GitHub
+            View Documentation
           </Button>
         </div>
 
@@ -63,8 +63,8 @@ export const Hero = () => {
           
           <div className="glass glass-hover rounded-xl p-6 group">
             <Zap className="h-8 w-8 text-purple-400 mb-3 mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="text-lg font-semibold text-white mb-2">Hands-on Labs</h3>
-            <p className="text-blue-100/70 text-sm">Step-by-step practical tutorials</p>
+            <h3 className="text-lg font-semibold text-white mb-2">Hands-on Tutorials</h3>
+            <p className="text-blue-100/70 text-sm">Step-by-step practical guides</p>
           </div>
           
           <div className="glass glass-hover rounded-xl p-6 group">
