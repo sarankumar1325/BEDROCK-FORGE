@@ -50,23 +50,26 @@ export const TableOfContents = () => {
   ];
 
   return (
-    <Card>
+    <Card className="bg-white/10 backdrop-blur-lg border-white/20 sticky top-8">
       <CardHeader>
-        <CardTitle className="text-lg">Table of Contents</CardTitle>
+        <CardTitle className="text-lg text-white flex items-center gap-2">
+          <Circle className="h-4 w-4 text-blue-400" />
+          Table of Contents
+        </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         {sections.map((section) => (
           <div key={section.number} className="space-y-2">
-            <div className="flex items-center gap-3 cursor-pointer hover:text-primary transition-colors">
+            <div className="flex items-center gap-3 cursor-pointer hover:text-blue-300 transition-colors group">
               {section.completed ? (
-                <CheckCircle className="h-4 w-4 text-green-600" />
+                <CheckCircle className="h-4 w-4 text-green-400 group-hover:scale-110 transition-transform" />
               ) : (
-                <Circle className="h-4 w-4 text-muted-foreground" />
+                <Circle className="h-4 w-4 text-blue-100/50" />
               )}
-              <span className="font-medium">
+              <span className="font-medium text-white group-hover:text-blue-300 transition-colors">
                 {section.number}. {section.title}
               </span>
-              <Badge variant="outline" className="ml-auto text-xs">
+              <Badge variant="outline" className="ml-auto text-xs bg-white/10 border-white/20 text-white">
                 {section.subsections.length}
               </Badge>
             </div>
@@ -74,7 +77,7 @@ export const TableOfContents = () => {
               {section.subsections.map((subsection, index) => (
                 <div 
                   key={index} 
-                  className="text-sm text-muted-foreground hover:text-primary cursor-pointer transition-colors"
+                  className="text-sm text-blue-100/70 hover:text-blue-300 cursor-pointer transition-colors pl-2 border-l border-white/10 hover:border-blue-400/50"
                 >
                   {subsection}
                 </div>

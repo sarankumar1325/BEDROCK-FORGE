@@ -2,12 +2,24 @@
 import { DocumentationHeader } from "@/components/DocumentationHeader";
 import { TableOfContents } from "@/components/TableOfContents";
 import { StepSection } from "@/components/StepSection";
+import { Hero } from "@/components/Hero";
+import { ProjectHighlights } from "@/components/ProjectHighlights";
+import { Footer } from "@/components/Footer";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+      {/* Hero Section */}
+      <Hero />
+      
+      {/* Project Highlights */}
+      <ProjectHighlights />
+      
+      {/* Documentation Header */}
       <DocumentationHeader />
+      
+      {/* Main Documentation Content */}
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Table of Contents - Sticky Sidebar */}
@@ -75,6 +87,8 @@ const Index = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };
